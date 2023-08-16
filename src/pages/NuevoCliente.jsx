@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 import { useNavigate, Form, useActionData } from "react-router-dom";
 import Formulario from "../components/Formulario";
@@ -15,7 +16,7 @@ export async function action({request}){
         errores.push('Todos los campos son obligatorios')
     }
 
-    // eslint-disable-next-line no-control-regex
+    // eslint-disable-next-line no-control-regex, no-useless-escape
     let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
     if(!regex.test(email)){
         errores.push('El email no es valido')
