@@ -3,7 +3,7 @@
 function NuevoCliente() {
   return (
     <div>
-        <h1>Nuevo Cliente</h1>
+        <h1>Nuevo Clientes</h1>
       
     </div>
   )
