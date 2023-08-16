@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Layout from './components/Layout'
+import NuevoCliente from './pages/NuevoCliente'
+import Index from './pages/Index'
 
 const router = createBrowserRouter([
   {
@@ -10,8 +12,12 @@ const router = createBrowserRouter([
     element: <Layout/>,
     children: [
       {
+        index: true,
+        element: <Index/>
+      },
+      {
         path: '/clientes/nuevo',
-        element: <h1>Nosotros</h1>
+        element: <NuevoCliente />
       }
     ]
   },
