@@ -2,17 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
-
+import Layout from './components/Layout'
 
 const router = createBrowserRouter([
   {
     path:'/',
-    element: <h1>Inicio</h1>
+    element: <Layout/>,
+    children: [
+      {
+        path: '/clientes/nuevo',
+        element: <h1>Nosotros</h1>
+      }
+    ]
   },
-  {
-    path: '/nosotros',
-    element: <h1>Nosotros</h1>
-  }
+  
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
