@@ -1,39 +1,45 @@
+/* eslint-disable no-control-regex */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
-import { useNavigate, Form, useActionData } from "react-router-dom";
+import { useNavigate, Form, useActionData, redirect } from "react-router-dom";
 import Formulario from "../components/Formulario";
 import Error from "../components/Error";
+import { agregarCliente } from "../data/Clientes";
 
-export async function action({request}){
-    const formData = await request.formData()
-    const datos = Object.fromEntries(formData)
+export async function action({ request }) {
+  const formData = await request.formData();
+  const datos = Object.fromEntries(formData);
 
-    const email = formData.get('email')
+  const email = formData.get("email");
 
-    //validacion
-    const errores = []
-    if(Object.values(datos).includes('')){
-        errores.push('Todos los campos son obligatorios')
-    }
+  //validacion
+  const errores = [];
+  if (Object.values(datos).includes("")) {
+    errores.push("Todos los campos son obligatorios");
+  }
 
-    // eslint-disable-next-line no-control-regex, no-useless-escape
-    let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
-    if(!regex.test(email)){
-        errores.push('El email no es valido')
-    }
+  // eslint-disable-next-line no-control-regex, no-useless-escape
+  let regex = new RegExp(
+    "([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|\"([]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|[[\t -Z^-~]*])"
+  );
+  if (!regex.test(email)) {
+    errores.push("El email no es valido");
+  }
 
-    //retornar datos si hay errores
-    if(Object.keys(errores).length){
-        return errores
-    }    
+  //retornar datos si hay errores
+  if (Object.keys(errores).length) {
+    return errores;
+  }
+
+  await agregarCliente(datos);
+
+  return redirect('/');
 }
 
 function NuevoCliente() {
 
-    const errores = useActionData()
-    const navigate = useNavigate()
-
-    console.log(errores)
+  const errores = useActionData()
+  const navigate = useNavigate()
 
   return (
     <>
