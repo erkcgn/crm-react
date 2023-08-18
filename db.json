@@ -1,14 +1,6 @@
 {
   "clientes": [
     {
-      "nombre": "Juan Darienzo",
-      "empresa": "Prueba",
-      "email": "juan_dar@juan.com",
-      "telefono": "102013313",
-      "notas": "desde editar",
-      "id": 1
-    },
-    {
       "nombre": "Karen",
       "empresa": "Prueba 2",
       "email": "karen@karen.com",
