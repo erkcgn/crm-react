@@ -1,0 +1,6 @@
+[build]
+command = "npm run build" # Cambia esto si usas otro comando para construir tu proyecto
+publish = "build" # Directorio que será publicado en Netlify
+
+[[plugins]]
+package = "netlify-plugin-json-server"
