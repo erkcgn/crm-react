@@ -1,0 +1,44 @@
+{
+  "clientes": [
+    {
+      "nombre": "Karen",
+      "empresa": "Prueba 2",
+      "email": "karen@karen.com",
+      "telefono": "138198313",
+      "notas": "desde editar",
+      "id": 2
+    },
+    {
+      "nombre": "Josue",
+      "empresa": "Prueba 3",
+      "email": "josue@josue.com",
+      "telefono": "31983913",
+      "notas": "desde editar",
+      "id": 3
+    },
+    {
+      "nombre": "Miguel",
+      "empresa": "Prueba 4",
+      "email": "miguel@miguel.com",
+      "telefono": "319381983",
+      "notas": "desde editar",
+      "id": 4
+    },
+    {
+      "nombre": "Pedro",
+      "empresa": "Prueba 5",
+      "email": "pedro@pedro.com",
+      "telefono": "1398198938",
+      "notas": "desde editar",
+      "id": 5
+    },
+    {
+      "nombre": "Erika",
+      "empresa": "Prueba 6",
+      "email": "erikac@gmail.com",
+      "telefono": "123456789",
+      "notas": "desde editar",
+      "id": 6
+    }
+  ]
+}
