@@ -1,46 +1,51 @@
 {
   "clientes": [
     {
-      "id": 1,
-      "nombre": "Juan",
-      "telefono": 102013313,
-      "email": "juan@juan.com",
-      "empresa": "Codigo Con Juan"
+      "nombre": "Juan Darienzo",
+      "empresa": "Prueba",
+      "email": "juan_dar@juan.com",
+      "telefono": "102013313",
+      "notas": "desde editar",
+      "id": 1
     },
     {
-      "id": 2,
       "nombre": "Karen",
-      "telefono": 138198313,
-      "email": "karen@juan.com",
-      "empresa": "Codigo Con Juan"
+      "empresa": "Prueba 2",
+      "email": "karen@karen.com",
+      "telefono": "138198313",
+      "notas": "desde editar",
+      "id": 2
     },
     {
-      "id": 3,
       "nombre": "Josue",
-      "telefono": 31983913,
-      "email": "josue@juan.com",
-      "empresa": "Codigo Con Juan"
+      "empresa": "Prueba 3",
+      "email": "josue@josue.com",
+      "telefono": "31983913",
+      "notas": "desde editar",
+      "id": 3
     },
     {
-      "id": 4,
       "nombre": "Miguel",
-      "telefono": 319381983,
-      "email": "miguel@juan.com",
-      "empresa": "Codigo Con Juan"
+      "empresa": "Prueba 4",
+      "email": "miguel@miguel.com",
+      "telefono": "319381983",
+      "notas": "desde editar",
+      "id": 4
     },
     {
-      "id": 5,
       "nombre": "Pedro",
-      "telefono": 1398198938,
-      "email": "pedro@juan.com",
-      "empresa": "Codigo Con Juan"
+      "empresa": "Prueba 5",
+      "email": "pedro@pedro.com",
+      "telefono": "1398198938",
+      "notas": "desde editar",
+      "id": 5
     },
     {
       "nombre": "Erika",
-      "empresa": "Codigo con Erika",
-      "email": "erikac.ec80@gmail.com",
-      "telefono": "03512451022",
-      "notas": "zaraza",
+      "empresa": "Prueba 6",
+      "email": "erikac@gmail.com",
+      "telefono": "123456789",
+      "notas": "desde editar",
       "id": 6
     }
   ]
